@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+ 
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+    <link rel="stylesheet" href="css/common.css" />
+</head>
+<body>
+	  <span class="searchPos-r">
+                <img src="img/333.jpg"  height="100" align="left" style="position:relative;top:0px;">
+                <img src="img/33.png" height="100" width="100" align="right" >
+                
+            </span>
+            
+           
+	<div id="div1">
+            <img src="img/15452109808538.jpg" >
+	</div>
+	
+	<div id="div3">
+		<img src="img/15529619046202.gif" />
+	</div >
+	
+	<!--弹性盒子-->
+	<div id="div2">
+		<img src="img/15529612798850.png">
+		<img src="img/15529614254628.png">
+		<img src="img/15529615852452.png">
+		<img src="img/15529616259772.png">
+		<img src="img/15529617384588.png">
+		<img src="img/15529618261290.png">
+		<img src="img/15529617908424.png">
+		<img src="img/15529617908424.png">
+		<img src="img/15529616902154.png">
+		<img src="img/15529617384588.png">
+	</div>
+	
+	<div id="div4">
+		<img src="img/15529813467938.jpg"/>
+	</div>
+	
+	<div id="div5">
+		<img src="img/15530008308127.jpg" />
+		<img src="img/15530008641106.jpg" />
+		<img src="img/15530014802353.jpg" />
+	</div>
+	
+	
+	<div id="div6">
+		<img src="img/mst_ba2cdc96deabe1388555ebaa780700f1.jpg" >
+	</div>
+	
+	
+	<div id ="div7">
+		<img src="img/15530535254865.jpg">
+		<img src="img/15530535805544.jpg">
+		<img src="img/15530536400461.jpg">
+	</div>
+	
+	<div id="div8">
+		<img src="img/15529919576372.jpg">
+		
+
+	</div>
+	
+	<div9 id="div9">
+		<img src="img/1.1.png" >
+		<img src="img/1-1.png">
+	</div9>
+	
+	<div10 id="div10">
+		<img src="img/2.1.png" >
+		<img src="img/2-1.png">
+	</div10>
+	
+	<div11 id="div11">
+         <img src="img/3.1.png">
+         <img src="img/3-1.png" >
+	</div11>
+	
+	<div12 id="div12">
+         <img src="img/4.1.png" >
+         <img src="img/4-1.png" >
+	</div12>
+	
+	<div13 id="div13">
+        <img src="img/7.1.png" >
+        <img src="img/8.1.png" >
+	</div13>
+	
+	<div14 id="div14">
+        <img src="img/5.1.png" >
+	</div14>
+	
+	<div15 id="div15">
+        <img src="img/6.1.png" >
+	</div15>
+	
+	
+	<div id="div16">
+		
+		<p>剩余时间：</p>
+		<span id="time"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="min"></span>分
+		<span id="sec"></span>秒
+		</div>
+		
+<div id="div18">
+	
+		<img src="111.png" >
+		
+		</div>
+		
+	<div id="div17">
+	     <img src="img/456.png" >
+    </div>
+			
+	
+	
+	<script>
+		function timeStamp(){
+			
+		
+		//获取时间戳
+		var time = new Date().getTime();
+		
+		//将时间戳显示到标签中
+		//document.getElementById("time").innerHTML = time;
+		//到2019年3月22日上午10时（1553220000000）剩余多少秒
+		
+		var rem =parseInt((1553227200000 - time)/1000);
+		document.getElementById("time").innerHTML =rem;
+		
+		//分
+		var min = parseInt (rem / 60 );
+		//秒
+		
+		var sec = rem % 60;
+		document.getElementById("min").innerHTML = min;
+		
+		document.getElementById("sec").innerHTML = sec;
+		}
+   setInterval("timeStamp()",1000);
+	</script>
+	
+</body>
+</html>
